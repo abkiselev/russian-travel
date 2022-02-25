@@ -1,4 +1,5 @@
 @import url(../russian-travel/normalize.css);
+
     
   @font-face {
     font-family: 'Inter';
@@ -28,6 +29,7 @@
     box-sizing: border-box;
     color: #fff;
     font-family: 'Inter', 'Arial', sans-serif;
+    font-display: swap;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 48px;
@@ -106,13 +108,12 @@
     margin: 92px auto 0;
 }
 .intro__title {
-    width: 690px;
     font-weight: 900;
     font-size: 54px;
     line-height: 58px;
 }
 .intro__text {
-    width: 690px;
+    max-width: 690px;
     font-size: 16px;
     line-height: 163%;
     margin-top: 40px;
@@ -149,14 +150,15 @@
 
 .places{
     max-width: 984px;
-    margin: 0 auto;
+    margin: 92px auto 0;
 }
 .place__card {
-    margin-top: 92px;
+    margin-top: 80px;
 }
 .place__heading {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 .place__title {
     font-weight: 900;
@@ -167,7 +169,7 @@
     padding-right: 40px;
 }
 .place__website {
-    /* flex-basis: 1; */
+    min-width: 200px;
 }
     
 .place__caption {
@@ -184,6 +186,7 @@
     line-height: 22px;
     border-bottom: #fff 1px solid;
     transition: all 0.3s ease;
+    
 }
 
 .place__url:hover {
@@ -198,14 +201,18 @@
 .place__image {
     max-width: 460px;
     padding-right: 40px;
+    object-fit: cover;
 }
 .place__text {
     margin: 0;
-    padding-bottom: 26px;
     font-size: 18px;
     line-height: 163%;
 }
 
+.place__text:not(:first-child) {
+    padding-top: 26px;
+    margin-top: 0;
+}
 
 
 
@@ -213,7 +220,6 @@
 .cover {
     margin: 92px auto 0;
     position: relative;
-    /* max-height: 740px; */
 }
 
 .cover__heading {
@@ -234,6 +240,7 @@
 .cover__background {
     object-fit: cover;
     width: 100%;
+    position: relative;
 }
 
 .cover__heading:hover {
@@ -282,4 +289,208 @@
 .footer-copy {
     font-size: 14px;
     line-height: 16px;
+    margin: 0;
+}
+
+
+@media (max-width: 1025px) {
+    .lead {
+        margin: 48px auto 0;
+    }
+
+    .lead__subtitle {
+        margin: 32px auto 56px;
+    }
+
+    .place__title {
+        padding-right: 32px;
+    }
+
+    .place__image {
+        padding-right: 32px;
+    }
+
+    .cover {
+        margin: 92px -48px 0;    
+    }
+
+}
+
+
+@media (max-width: 770px) {
+    .page {
+        padding: 0 24px;
+    }
+
+    .lead {
+        margin: 48px -24px 0;
+    }
+
+    .lead__caption {
+        margin-left: 24px;
+    }
+
+    .place__card {
+        margin-top: 72px;
+    }
+
+    .place__title {
+        font-size: 42px;
+        line-height: 46px;
+        padding-right: 28px;
+        width: 340px;
+    }
+
+    .place__image {
+        max-width: 340px;
+        padding-right: 28px;
+    }
+
+    .place__text {
+        font-size: 16px;
+        line-height: 163%;
+    }
+
+    .cover {
+        margin: 90px -24px 0;    
+    }
+
+    .footer {
+        margin-top: 90px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .page {
+        padding: 0 16px;
+     }
+
+     .header {
+        padding-top: 16px;
+        
+    }
+
+    .header__logo {
+        max-width: 142px;
+    }
+
+
+    .lang-link {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .lead {
+        margin: 48px -16px 0;
+    }
+
+
+    .lead__title {
+        font-size: 40px;
+        line-height: 44px;
+        max-width: 288px;
+    }
+
+    .lead__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 288px;
+        margin: 16px auto 40px;
+    }
+
+    .lead__caption {
+        margin-left: 16px;
+    }
+
+    .intro {
+        margin: 64px auto 0;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .photo-grid {
+        grid-template: auto / auto;
+        margin: 64px auto 0;
+        gap: 12px;
+    }
+
+    .photo-grid_item {
+        width: 100%;
+    }
+
+    .places{
+        max-width: 984px;
+        margin: 64px auto 0;
+    }
+    .place__card {
+        margin-top: 50px;
+    }
+
+    .place__title {
+        font-size: 32px;
+        line-height: 35px;
+        width: 288px;
+        padding-bottom: 32px;
+    }
+
+    .place__image {
+        position: relative;
+        margin: 0 -16px 32px;
+        max-height: 100vw;
+        padding-right: 0;
+    }
+
+    .place__text {
+        font-size: 16px;
+        line-height: 163%;
+    }
+
+    .place__content {
+        flex-wrap: wrap;
+        margin-top: 32px;
+    }
+
+    .cover {
+        margin: 66px -16px 0;    
+    }
+
+    .cover__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 288px;
+    }
+    .cover__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 16px 0 0 0;
+        max-width: 288px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-link {
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .footer-copy {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 16px;
+    }
+
 }
