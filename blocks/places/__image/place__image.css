@@ -1,0 +1,33 @@
+.place__image {
+    max-width: 460px;
+    padding-right: 40px;
+    object-fit: cover;
+}
+
+@media (max-width: 1025px) {
+    .place__image {
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 770px) {
+    .place__image {
+        max-width: 340px;
+        padding-right: 28px;
+    }
+}
+
+@media (max-width: 425px) {
+    .place__image {
+        margin: 0 0 32px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .place__image {
+        position: relative;
+        margin: 0 -16px 32px;
+        max-height: 100vw;
+        padding-right: 0;
+    }
+}

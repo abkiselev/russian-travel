@@ -1,0 +1,22 @@
+.page {
+    background-color: #2A2C2F;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-display: swap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+@media (max-width: 770px) {
+    .page {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .page {
+        padding: 0 16px;
+     }
+}
