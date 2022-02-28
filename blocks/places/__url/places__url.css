@@ -1,4 +1,4 @@
-.place__url {
+.places__url {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -7,6 +7,6 @@
     transition: all 0.3s ease;   
 }
 
-.place__url:hover {
+.places__url:hover {
     opacity: 0.8;
 }

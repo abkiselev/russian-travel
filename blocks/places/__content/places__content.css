@@ -1,11 +1,11 @@
-.place__content {
+.places__content {
     display: flex;
     align-items: flex-start;
     margin-top: 48px;
 }
 
 @media (max-width: 425px) {
-    .place__content {
+    .places__content {
         flex-wrap: wrap;
         margin-top: 32px;
     }

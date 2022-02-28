@@ -1,15 +1,15 @@
-.place__card {
+.places__card {
     margin-top: 80px;
 }
 
 @media (max-width: 770px) {
-    .place__card {
+    .places__card {
         margin-top: 72px;
     }
 }
 
 @media (max-width: 425px) {
-    .place__card {
+    .places__card {
         margin-top: 50px;
     }
 }
