@@ -12,14 +12,16 @@
 
 @media (max-width: 770px) {
     .places__image {
-        max-width: 340px;
+        max-height: 340px;
+        margin: 0 0 32px 0;
         padding-right: 28px;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 400px) {
     .places__image {
-        margin: 0 0 32px 0;
+        max-height: 240px;
+        padding-right: 0px;
     }
 }
 
@@ -28,6 +30,5 @@
         position: relative;
         margin: 0 -16px 32px;
         max-height: 100vw;
-        padding-right: 0;
     }
 }

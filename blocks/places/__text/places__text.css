@@ -13,13 +13,5 @@
 @media (max-width: 770px) {
     .places__text {
         font-size: 16px;
-        line-height: 163%;
-    }
-}
-
-@media (max-width: 425px) {
-    .places__text {
-        font-size: 16px;
-        line-height: 163%;
     }
 }

@@ -18,6 +18,5 @@
 @media (max-width: 320px) {
     .photo-grid {
         grid-template: auto / auto;
-        margin: 64px auto 0;
     }
 }
